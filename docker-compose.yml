@@ -6,5 +6,4 @@ services:
     volumes:
       - ./src:/app  # ローカルのディレクトリをマウント
     stdin_open: true  # 標準入力をオープンにする
-    tty: true         # 仮想端末を使用
-    command: /bin/sh  # シェルを起動
+    tty: true         # 仮想端末を使用動
