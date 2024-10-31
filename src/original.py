@@ -31,6 +31,13 @@ def Func_3(vals: list) -> int:
     return sum(vals)
 
 
+# 使っていないライブラリをimportする ⇒ 1行で複数importしていること、ioとtimeは使っていないから削除してほしい
+def func_4(vals: list) -> int:
+    import os
+    import io, time
+
+    return sum(vals), os.getcwd()
+
 
 print(f"{list_1=}")
 print(f"{list_2=}")
@@ -40,3 +47,4 @@ print(f"{list_2=}")
 print(f"{func_1(list_1)=}")
 print(f"{func_2(list_1)=}")
 print(f"{Func_3(list_1)=}")
+print(f"{func_4(list_1)=}")
