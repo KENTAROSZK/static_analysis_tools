@@ -4,6 +4,7 @@ services:
   python-app:
     build: .
     volumes:
-      - ./src:/app  # ローカルのディレクトリをマウント
+      - ./black_test:/app/black_test  # ローカルのディレクトリをマウント
+      - ./ruff_test:/app/ruff_test  # ローカルのディレクトリをマウント
     stdin_open: true  # 標準入力をオープンにする
     tty: true         # 仮想端末を使用動

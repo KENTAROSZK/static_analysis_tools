@@ -30,11 +30,9 @@ def func_2(VALS: list) -> int:
 def Func_3(vals: list) -> int:
     return sum(vals)
 
-
 # 使っていないライブラリをimportする ⇒ 1行で複数importしていること、ioとtimeは使っていないから削除してほしい
 def func_4(vals: list) -> int:
     import os
-    import io, time
 
     return sum(vals), os.getcwd()
 
